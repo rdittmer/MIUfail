@@ -1,6 +1,6 @@
 // Ryan Dittmer
-// Project 4
-// VFW 1202
+// Week 1
+// MIU 1203
 // Add Bill js 
 
 window.addEventListener( "DOMContentLoaded", function(){
