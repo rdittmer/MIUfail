@@ -13,12 +13,54 @@
 		<meta name="robots"      content="noindex, nofollow"/>
 		<meta name="viewport"    content="user-scalable=no, width=device-width"/>
 		<meta name="viewport"    content="target-densitydpi=device-dpi"/>
-		<link href="styles.css"   rel="stylesheet"/>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 		<title>Monthly Bill Tracker</title>
 	</head>
 	<body>
-		<h1>Monthly Bill Tracker</h1>
-		<p>This tool will help you keep track of your monthly bills.</p>
-		<a href="additem.html">Click here to add a bill</a>
+		<div data-role="page" id="page1">
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Search for a Bill
+                        </label>
+                        <input id="searchInput" type="search" />
+                    </fieldset>
+                </div>
+                <ul data-role="listview" data-divider-theme="d" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Browse Bills
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Utilities
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Rent / House
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Auto
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Credit Card
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            Other
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
 	</body>
 </html>
